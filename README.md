@@ -8,7 +8,7 @@ A custom chain can be used instead of ropsten by changing the RPC URL and Chain 
 
 # Installation Steps
 
-Frist, go to the directory through the terminal and do ```pod init``` followed by ```pod install```
+First, go to the directory through the terminal and do ```pod init``` followed by ```pod install```
 
 Then, add Firebase to the project by following: https://firebase.google.com/docs/ios/setup
 Make sure Google Sign In, and Firestore are enabled on your Firebase Project.
