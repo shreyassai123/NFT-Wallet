@@ -1,0 +1,961 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8E539315A1BABF3E5527ECEA /* Pods_NFTWallet_NFTWalletUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71A817EAE17C2B45014D9A23 /* Pods_NFTWallet_NFTWalletUITests.framework */; };
+		A3263A806E3A3B8669FA2B8C /* Pods_NFTWallet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63D1AEEC297F092D03277A50 /* Pods_NFTWallet.framework */; };
+		AAE8038FB1DF9357524D5A30 /* Pods_NFTWalletTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE099680786547AA73589529 /* Pods_NFTWalletTests.framework */; };
+		B10CC0BD273F8086001CC3CD /* NFTCheckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10CC0BC273F8085001CC3CD /* NFTCheckViewController.swift */; };
+		B1451FAA273FADDC00A8B938 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1451FA9273FADDC00A8B938 /* SettingsViewController.swift */; };
+		B1451FAC273FC56200A8B938 /* Contract.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1451FAB273FC56200A8B938 /* Contract.swift */; };
+		B15DF51B273F6A8600FD2A6C /* NFTCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15DF51A273F6A8600FD2A6C /* NFTCollectionViewCell.swift */; };
+		B162188C273D86310012B9DD /* CreateNFTViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B162188B273D86310012B9DD /* CreateNFTViewController.swift */; };
+		B168DB78273CF5A200DC7C67 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B168DB77273CF5A200DC7C67 /* HomeViewController.swift */; };
+		B17777F5273E89DC00A74FC9 /* FirebaseStorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17777F4273E89DC00A74FC9 /* FirebaseStorageManager.swift */; };
+		B17777FB273EB3D700A74FC9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17777FA273EB3D700A74FC9 /* Constants.swift */; };
+		B17777FF273F600900A74FC9 /* NFTCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17777FE273F600900A74FC9 /* NFTCollectionViewController.swift */; };
+		B17F36B0273CE98A002C47DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17F36AF273CE98A002C47DE /* AppDelegate.swift */; };
+		B17F36B2273CE98A002C47DE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17F36B1273CE98A002C47DE /* SceneDelegate.swift */; };
+		B17F36B4273CE98A002C47DE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17F36B3273CE98A002C47DE /* ViewController.swift */; };
+		B17F36B7273CE98A002C47DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B17F36B5273CE98A002C47DE /* Main.storyboard */; };
+		B17F36BA273CE98A002C47DE /* NFTWallet.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B17F36B8273CE98A002C47DE /* NFTWallet.xcdatamodeld */; };
+		B17F36BC273CE98B002C47DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B17F36BB273CE98B002C47DE /* Assets.xcassets */; };
+		B17F36BF273CE98B002C47DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B17F36BD273CE98B002C47DE /* LaunchScreen.storyboard */; };
+		B17F36CA273CE98B002C47DE /* NFTWalletTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17F36C9273CE98B002C47DE /* NFTWalletTests.swift */; };
+		B17F36D4273CE98B002C47DE /* NFTWalletUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17F36D3273CE98B002C47DE /* NFTWalletUITests.swift */; };
+		B17F36D6273CE98B002C47DE /* NFTWalletUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17F36D5273CE98B002C47DE /* NFTWalletUITestsLaunchTests.swift */; };
+		B17F36E3273CEABA002C47DE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B17F36E2273CEABA002C47DE /* GoogleService-Info.plist */; };
+		B1DEEE8B273D29C100A019F1 /* Web3 in Frameworks */ = {isa = PBXBuildFile; productRef = B1DEEE8A273D29C100A019F1 /* Web3 */; };
+		B1DEEE8D273D29C100A019F1 /* Web3ContractABI in Frameworks */ = {isa = PBXBuildFile; productRef = B1DEEE8C273D29C100A019F1 /* Web3ContractABI */; };
+		B1DEEE8F273D29C100A019F1 /* Web3PromiseKit in Frameworks */ = {isa = PBXBuildFile; productRef = B1DEEE8E273D29C100A019F1 /* Web3PromiseKit */; };
+		B1F97248273E352B00475A27 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F97247273E352A00475A27 /* ImagePicker.swift */; };
+		B1F9724A273E44BD00475A27 /* NFTModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F97249273E44BD00475A27 /* NFTModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B17F36C6273CE98B002C47DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B17F36A4273CE98A002C47DE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B17F36AB273CE98A002C47DE;
+			remoteInfo = NFTWallet;
+		};
+		B17F36D0273CE98B002C47DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B17F36A4273CE98A002C47DE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B17F36AB273CE98A002C47DE;
+			remoteInfo = NFTWallet;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		19D4BA3BE71F55531685D889 /* Pods-NFTWallet-NFTWalletUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NFTWallet-NFTWalletUITests.release.xcconfig"; path = "Target Support Files/Pods-NFTWallet-NFTWalletUITests/Pods-NFTWallet-NFTWalletUITests.release.xcconfig"; sourceTree = "<group>"; };
+		63D1AEEC297F092D03277A50 /* Pods_NFTWallet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NFTWallet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		71A817EAE17C2B45014D9A23 /* Pods_NFTWallet_NFTWalletUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NFTWallet_NFTWalletUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B10CC0BC273F8085001CC3CD /* NFTCheckViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFTCheckViewController.swift; sourceTree = "<group>"; };
+		B1451FA9273FADDC00A8B938 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		B1451FAB273FC56200A8B938 /* Contract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contract.swift; sourceTree = "<group>"; };
+		B15DF51A273F6A8600FD2A6C /* NFTCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFTCollectionViewCell.swift; sourceTree = "<group>"; };
+		B162188B273D86310012B9DD /* CreateNFTViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNFTViewController.swift; sourceTree = "<group>"; };
+		B168DB77273CF5A200DC7C67 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		B17777F4273E89DC00A74FC9 /* FirebaseStorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseStorageManager.swift; sourceTree = "<group>"; };
+		B17777FA273EB3D700A74FC9 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		B17777FE273F600900A74FC9 /* NFTCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFTCollectionViewController.swift; sourceTree = "<group>"; };
+		B17F36AC273CE98A002C47DE /* NFTWallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NFTWallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B17F36AF273CE98A002C47DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B17F36B1273CE98A002C47DE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B17F36B3273CE98A002C47DE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B17F36B6273CE98A002C47DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B17F36B9273CE98A002C47DE /* NFTWallet.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NFTWallet.xcdatamodel; sourceTree = "<group>"; };
+		B17F36BB273CE98B002C47DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B17F36BE273CE98B002C47DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B17F36C0273CE98B002C47DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B17F36C5273CE98B002C47DE /* NFTWalletTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NFTWalletTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B17F36C9273CE98B002C47DE /* NFTWalletTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFTWalletTests.swift; sourceTree = "<group>"; };
+		B17F36CF273CE98B002C47DE /* NFTWalletUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NFTWalletUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B17F36D3273CE98B002C47DE /* NFTWalletUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFTWalletUITests.swift; sourceTree = "<group>"; };
+		B17F36D5273CE98B002C47DE /* NFTWalletUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFTWalletUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B17F36E2273CEABA002C47DE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B1F97246273E2C8500475A27 /* NFTWallet.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NFTWallet.entitlements; sourceTree = "<group>"; };
+		B1F97247273E352A00475A27 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		B1F97249273E44BD00475A27 /* NFTModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFTModel.swift; sourceTree = "<group>"; };
+		C2687E6628F0D184B8CFBC66 /* Pods-NFTWalletTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NFTWalletTests.debug.xcconfig"; path = "Target Support Files/Pods-NFTWalletTests/Pods-NFTWalletTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C3A9A622123A2369C46F2448 /* Pods-NFTWalletTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NFTWalletTests.release.xcconfig"; path = "Target Support Files/Pods-NFTWalletTests/Pods-NFTWalletTests.release.xcconfig"; sourceTree = "<group>"; };
+		C7C7D66ABC86FB520BB6BE55 /* Pods-NFTWallet-NFTWalletUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NFTWallet-NFTWalletUITests.debug.xcconfig"; path = "Target Support Files/Pods-NFTWallet-NFTWalletUITests/Pods-NFTWallet-NFTWalletUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D885979B4E2E8D63B34CC211 /* Pods-NFTWallet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NFTWallet.release.xcconfig"; path = "Target Support Files/Pods-NFTWallet/Pods-NFTWallet.release.xcconfig"; sourceTree = "<group>"; };
+		DE099680786547AA73589529 /* Pods_NFTWalletTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NFTWalletTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9B6ABE9BD0D345E3518DADC /* Pods-NFTWallet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NFTWallet.debug.xcconfig"; path = "Target Support Files/Pods-NFTWallet/Pods-NFTWallet.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B17F36A9273CE98A002C47DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1DEEE8D273D29C100A019F1 /* Web3ContractABI in Frameworks */,
+				A3263A806E3A3B8669FA2B8C /* Pods_NFTWallet.framework in Frameworks */,
+				B1DEEE8F273D29C100A019F1 /* Web3PromiseKit in Frameworks */,
+				B1DEEE8B273D29C100A019F1 /* Web3 in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B17F36C2273CE98B002C47DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAE8038FB1DF9357524D5A30 /* Pods_NFTWalletTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B17F36CC273CE98B002C47DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E539315A1BABF3E5527ECEA /* Pods_NFTWallet_NFTWalletUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		40179048DDB295F9A7515D4B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				63D1AEEC297F092D03277A50 /* Pods_NFTWallet.framework */,
+				71A817EAE17C2B45014D9A23 /* Pods_NFTWallet_NFTWalletUITests.framework */,
+				DE099680786547AA73589529 /* Pods_NFTWalletTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B168DB74273CF54E00DC7C67 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B17F36B3273CE98A002C47DE /* ViewController.swift */,
+				B168DB77273CF5A200DC7C67 /* HomeViewController.swift */,
+				B162188B273D86310012B9DD /* CreateNFTViewController.swift */,
+				B1F97247273E352A00475A27 /* ImagePicker.swift */,
+				B1451FAB273FC56200A8B938 /* Contract.swift */,
+				B17777F4273E89DC00A74FC9 /* FirebaseStorageManager.swift */,
+				B17777FA273EB3D700A74FC9 /* Constants.swift */,
+				B17777FE273F600900A74FC9 /* NFTCollectionViewController.swift */,
+				B15DF51A273F6A8600FD2A6C /* NFTCollectionViewCell.swift */,
+				B10CC0BC273F8085001CC3CD /* NFTCheckViewController.swift */,
+				B1451FA9273FADDC00A8B938 /* SettingsViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B168DB75273CF55500DC7C67 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B17F36B5273CE98A002C47DE /* Main.storyboard */,
+				B17F36BD273CE98B002C47DE /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B168DB76273CF55D00DC7C67 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B1F97249273E44BD00475A27 /* NFTModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B17F36A3273CE98A002C47DE = {
+			isa = PBXGroup;
+			children = (
+				B17F36AE273CE98A002C47DE /* NFTWallet */,
+				B17F36C8273CE98B002C47DE /* NFTWalletTests */,
+				B17F36D2273CE98B002C47DE /* NFTWalletUITests */,
+				B17F36AD273CE98A002C47DE /* Products */,
+				C7974DBD312BFDF58B3FC131 /* Pods */,
+				40179048DDB295F9A7515D4B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B17F36AD273CE98A002C47DE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B17F36AC273CE98A002C47DE /* NFTWallet.app */,
+				B17F36C5273CE98B002C47DE /* NFTWalletTests.xctest */,
+				B17F36CF273CE98B002C47DE /* NFTWalletUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B17F36AE273CE98A002C47DE /* NFTWallet */ = {
+			isa = PBXGroup;
+			children = (
+				B1F97246273E2C8500475A27 /* NFTWallet.entitlements */,
+				B168DB76273CF55D00DC7C67 /* Models */,
+				B168DB75273CF55500DC7C67 /* Views */,
+				B168DB74273CF54E00DC7C67 /* Controllers */,
+				B17F36AF273CE98A002C47DE /* AppDelegate.swift */,
+				B17F36B1273CE98A002C47DE /* SceneDelegate.swift */,
+				B17F36BB273CE98B002C47DE /* Assets.xcassets */,
+				B17F36C0273CE98B002C47DE /* Info.plist */,
+				B17F36E2273CEABA002C47DE /* GoogleService-Info.plist */,
+				B17F36B8273CE98A002C47DE /* NFTWallet.xcdatamodeld */,
+			);
+			path = NFTWallet;
+			sourceTree = "<group>";
+		};
+		B17F36C8273CE98B002C47DE /* NFTWalletTests */ = {
+			isa = PBXGroup;
+			children = (
+				B17F36C9273CE98B002C47DE /* NFTWalletTests.swift */,
+			);
+			path = NFTWalletTests;
+			sourceTree = "<group>";
+		};
+		B17F36D2273CE98B002C47DE /* NFTWalletUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B17F36D3273CE98B002C47DE /* NFTWalletUITests.swift */,
+				B17F36D5273CE98B002C47DE /* NFTWalletUITestsLaunchTests.swift */,
+			);
+			path = NFTWalletUITests;
+			sourceTree = "<group>";
+		};
+		C7974DBD312BFDF58B3FC131 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F9B6ABE9BD0D345E3518DADC /* Pods-NFTWallet.debug.xcconfig */,
+				D885979B4E2E8D63B34CC211 /* Pods-NFTWallet.release.xcconfig */,
+				C7C7D66ABC86FB520BB6BE55 /* Pods-NFTWallet-NFTWalletUITests.debug.xcconfig */,
+				19D4BA3BE71F55531685D889 /* Pods-NFTWallet-NFTWalletUITests.release.xcconfig */,
+				C2687E6628F0D184B8CFBC66 /* Pods-NFTWalletTests.debug.xcconfig */,
+				C3A9A622123A2369C46F2448 /* Pods-NFTWalletTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B17F36AB273CE98A002C47DE /* NFTWallet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B17F36D9273CE98B002C47DE /* Build configuration list for PBXNativeTarget "NFTWallet" */;
+			buildPhases = (
+				CB6FA0A51720716C4D5AFDB0 /* [CP] Check Pods Manifest.lock */,
+				B17F36A8273CE98A002C47DE /* Sources */,
+				B17F36A9273CE98A002C47DE /* Frameworks */,
+				B17F36AA273CE98A002C47DE /* Resources */,
+				490FB52AA4FCFF96D97CEA10 /* [CP] Embed Pods Frameworks */,
+				4A2D26414BAA0F10226B533A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NFTWallet;
+			packageProductDependencies = (
+				B1DEEE8A273D29C100A019F1 /* Web3 */,
+				B1DEEE8C273D29C100A019F1 /* Web3ContractABI */,
+				B1DEEE8E273D29C100A019F1 /* Web3PromiseKit */,
+			);
+			productName = NFTWallet;
+			productReference = B17F36AC273CE98A002C47DE /* NFTWallet.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B17F36C4273CE98B002C47DE /* NFTWalletTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B17F36DC273CE98B002C47DE /* Build configuration list for PBXNativeTarget "NFTWalletTests" */;
+			buildPhases = (
+				72D6540A1BE035CBA3E6716F /* [CP] Check Pods Manifest.lock */,
+				B17F36C1273CE98B002C47DE /* Sources */,
+				B17F36C2273CE98B002C47DE /* Frameworks */,
+				B17F36C3273CE98B002C47DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B17F36C7273CE98B002C47DE /* PBXTargetDependency */,
+			);
+			name = NFTWalletTests;
+			productName = NFTWalletTests;
+			productReference = B17F36C5273CE98B002C47DE /* NFTWalletTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B17F36CE273CE98B002C47DE /* NFTWalletUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B17F36DF273CE98B002C47DE /* Build configuration list for PBXNativeTarget "NFTWalletUITests" */;
+			buildPhases = (
+				A16103046AB12014931825FD /* [CP] Check Pods Manifest.lock */,
+				B17F36CB273CE98B002C47DE /* Sources */,
+				B17F36CC273CE98B002C47DE /* Frameworks */,
+				B17F36CD273CE98B002C47DE /* Resources */,
+				4C874FB30258B84CB81120DC /* [CP] Embed Pods Frameworks */,
+				8583A0C3DFAA0F2B671574F4 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B17F36D1273CE98B002C47DE /* PBXTargetDependency */,
+			);
+			name = NFTWalletUITests;
+			productName = NFTWalletUITests;
+			productReference = B17F36CF273CE98B002C47DE /* NFTWalletUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B17F36A4273CE98A002C47DE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					B17F36AB273CE98A002C47DE = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					B17F36C4273CE98B002C47DE = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = B17F36AB273CE98A002C47DE;
+					};
+					B17F36CE273CE98B002C47DE = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = B17F36AB273CE98A002C47DE;
+					};
+				};
+			};
+			buildConfigurationList = B17F36A7273CE98A002C47DE /* Build configuration list for PBXProject "NFTWallet" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B17F36A3273CE98A002C47DE;
+			packageReferences = (
+				B1DEEE89273D29C100A019F1 /* XCRemoteSwiftPackageReference "Web3.swift" */,
+			);
+			productRefGroup = B17F36AD273CE98A002C47DE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B17F36AB273CE98A002C47DE /* NFTWallet */,
+				B17F36C4273CE98B002C47DE /* NFTWalletTests */,
+				B17F36CE273CE98B002C47DE /* NFTWalletUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B17F36AA273CE98A002C47DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B17F36BF273CE98B002C47DE /* LaunchScreen.storyboard in Resources */,
+				B17F36E3273CEABA002C47DE /* GoogleService-Info.plist in Resources */,
+				B17F36BC273CE98B002C47DE /* Assets.xcassets in Resources */,
+				B17F36B7273CE98A002C47DE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B17F36C3273CE98B002C47DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B17F36CD273CE98B002C47DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		490FB52AA4FCFF96D97CEA10 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NFTWallet/Pods-NFTWallet-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NFTWallet/Pods-NFTWallet-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NFTWallet/Pods-NFTWallet-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4A2D26414BAA0F10226B533A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NFTWallet/Pods-NFTWallet-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NFTWallet/Pods-NFTWallet-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NFTWallet/Pods-NFTWallet-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4C874FB30258B84CB81120DC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NFTWallet-NFTWalletUITests/Pods-NFTWallet-NFTWalletUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NFTWallet-NFTWalletUITests/Pods-NFTWallet-NFTWalletUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NFTWallet-NFTWalletUITests/Pods-NFTWallet-NFTWalletUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		72D6540A1BE035CBA3E6716F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NFTWalletTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8583A0C3DFAA0F2B671574F4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NFTWallet-NFTWalletUITests/Pods-NFTWallet-NFTWalletUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NFTWallet-NFTWalletUITests/Pods-NFTWallet-NFTWalletUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NFTWallet-NFTWalletUITests/Pods-NFTWallet-NFTWalletUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A16103046AB12014931825FD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NFTWallet-NFTWalletUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB6FA0A51720716C4D5AFDB0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NFTWallet-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B17F36A8273CE98A002C47DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B10CC0BD273F8086001CC3CD /* NFTCheckViewController.swift in Sources */,
+				B168DB78273CF5A200DC7C67 /* HomeViewController.swift in Sources */,
+				B15DF51B273F6A8600FD2A6C /* NFTCollectionViewCell.swift in Sources */,
+				B1451FAC273FC56200A8B938 /* Contract.swift in Sources */,
+				B17777FB273EB3D700A74FC9 /* Constants.swift in Sources */,
+				B162188C273D86310012B9DD /* CreateNFTViewController.swift in Sources */,
+				B1F9724A273E44BD00475A27 /* NFTModel.swift in Sources */,
+				B17F36B4273CE98A002C47DE /* ViewController.swift in Sources */,
+				B1451FAA273FADDC00A8B938 /* SettingsViewController.swift in Sources */,
+				B17777F5273E89DC00A74FC9 /* FirebaseStorageManager.swift in Sources */,
+				B1F97248273E352B00475A27 /* ImagePicker.swift in Sources */,
+				B17F36B0273CE98A002C47DE /* AppDelegate.swift in Sources */,
+				B17777FF273F600900A74FC9 /* NFTCollectionViewController.swift in Sources */,
+				B17F36B2273CE98A002C47DE /* SceneDelegate.swift in Sources */,
+				B17F36BA273CE98A002C47DE /* NFTWallet.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B17F36C1273CE98B002C47DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B17F36CA273CE98B002C47DE /* NFTWalletTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B17F36CB273CE98B002C47DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B17F36D6273CE98B002C47DE /* NFTWalletUITestsLaunchTests.swift in Sources */,
+				B17F36D4273CE98B002C47DE /* NFTWalletUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B17F36C7273CE98B002C47DE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B17F36AB273CE98A002C47DE /* NFTWallet */;
+			targetProxy = B17F36C6273CE98B002C47DE /* PBXContainerItemProxy */;
+		};
+		B17F36D1273CE98B002C47DE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B17F36AB273CE98A002C47DE /* NFTWallet */;
+			targetProxy = B17F36D0273CE98B002C47DE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B17F36B5273CE98A002C47DE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B17F36B6273CE98A002C47DE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B17F36BD273CE98B002C47DE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B17F36BE273CE98B002C47DE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B17F36D7273CE98B002C47DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B17F36D8273CE98B002C47DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B17F36DA273CE98B002C47DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9B6ABE9BD0D345E3518DADC /* Pods-NFTWallet.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = NFTWallet/NFTWallet.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NFTWallet/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "NFT Wallet";
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app wants to take pictures.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "This app wants to use your photos.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.NFTWallet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B17F36DB273CE98B002C47DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D885979B4E2E8D63B34CC211 /* Pods-NFTWallet.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = NFTWallet/NFTWallet.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NFTWallet/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "NFT Wallet";
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app wants to take pictures.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "This app wants to use your photos.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.NFTWallet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B17F36DD273CE98B002C47DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2687E6628F0D184B8CFBC66 /* Pods-NFTWalletTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7684GX5R87;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.NFTWalletTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NFTWallet.app/NFTWallet";
+			};
+			name = Debug;
+		};
+		B17F36DE273CE98B002C47DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3A9A622123A2369C46F2448 /* Pods-NFTWalletTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7684GX5R87;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.NFTWalletTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NFTWallet.app/NFTWallet";
+			};
+			name = Release;
+		};
+		B17F36E0273CE98B002C47DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7C7D66ABC86FB520BB6BE55 /* Pods-NFTWallet-NFTWalletUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7684GX5R87;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.NFTWalletUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NFTWallet;
+			};
+			name = Debug;
+		};
+		B17F36E1273CE98B002C47DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19D4BA3BE71F55531685D889 /* Pods-NFTWallet-NFTWalletUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7684GX5R87;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.NFTWalletUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NFTWallet;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B17F36A7273CE98A002C47DE /* Build configuration list for PBXProject "NFTWallet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B17F36D7273CE98B002C47DE /* Debug */,
+				B17F36D8273CE98B002C47DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B17F36D9273CE98B002C47DE /* Build configuration list for PBXNativeTarget "NFTWallet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B17F36DA273CE98B002C47DE /* Debug */,
+				B17F36DB273CE98B002C47DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B17F36DC273CE98B002C47DE /* Build configuration list for PBXNativeTarget "NFTWalletTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B17F36DD273CE98B002C47DE /* Debug */,
+				B17F36DE273CE98B002C47DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B17F36DF273CE98B002C47DE /* Build configuration list for PBXNativeTarget "NFTWalletUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B17F36E0273CE98B002C47DE /* Debug */,
+				B17F36E1273CE98B002C47DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B1DEEE89273D29C100A019F1 /* XCRemoteSwiftPackageReference "Web3.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Boilertalk/Web3.swift.git";
+			requirement = {
+				kind = exactVersion;
+				version = 0.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B1DEEE8A273D29C100A019F1 /* Web3 */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B1DEEE89273D29C100A019F1 /* XCRemoteSwiftPackageReference "Web3.swift" */;
+			productName = Web3;
+		};
+		B1DEEE8C273D29C100A019F1 /* Web3ContractABI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B1DEEE89273D29C100A019F1 /* XCRemoteSwiftPackageReference "Web3.swift" */;
+			productName = Web3ContractABI;
+		};
+		B1DEEE8E273D29C100A019F1 /* Web3PromiseKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B1DEEE89273D29C100A019F1 /* XCRemoteSwiftPackageReference "Web3.swift" */;
+			productName = Web3PromiseKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		B17F36B8273CE98A002C47DE /* NFTWallet.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B17F36B9273CE98A002C47DE /* NFTWallet.xcdatamodel */,
+			);
+			currentVersion = B17F36B9273CE98A002C47DE /* NFTWallet.xcdatamodel */;
+			path = NFTWallet.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = B17F36A4273CE98A002C47DE /* Project object */;
+}
